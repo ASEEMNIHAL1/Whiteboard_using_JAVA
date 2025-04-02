@@ -1,7 +1,9 @@
 # Collaborative Whiteboard Application
 
 ## Team Members
-**ASEEM NIHAL DANG, JAYESH SOLANKI, TITAS MANDAL**
+  1. ASEEM NIHAL DANG
+  2. JAYESH SOLANKI
+  3. TITAS MANDAL
 
 ## Overview
 This is a collaborative whiteboard application that allows multiple users to:
