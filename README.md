@@ -1,36 +1,35 @@
-# Collaborative Whiteboard Application
+# 🎭 Collaborative Whiteboard Application
 
-## Team Members
-  1. ASEEM NIHAL DANG
-  2. JAYESH SOLANKI
-  3. TITAS MANDAL
+## 👨‍👩‍👦 Team Members
+- **Aseem Nihal Dang**
+- **Jayesh Solanki**
+- **Titas Mandal**
 
-## Overview
-This is a collaborative whiteboard application that allows multiple users to:
+## 🎉 Overview
+The **Collaborative Whiteboard Application** is an interactive platform that enables multiple users to draw, chat, and collaborate in real-time on a shared canvas.
 
-- Draw on a shared canvas in real-time
-- Chat with other connected users
-- See who else is online
+### 🎨 Key Features
+✅ **Real-time Drawing** – Instant synchronization of drawings for all connected users  
+✅ **Color Palette** – Select from multiple colors to customize your artwork  
+✅ **Eraser Tool** – Easily remove unwanted parts of your drawing  
+✅ **Live Chat** – Communicate with other users via integrated text chat  
+✅ **User List** – View active participants in real-time  
 
-## Features
-- **Real-time drawing**: All drawings appear instantly for all connected clients
-- **Color palette**: Choose from multiple colors for drawing
-- **Eraser tool**: Remove parts of the drawing
-- **Chat functionality**: Text chat with all connected users
-- **User list**: See who's currently connected to the whiteboard
+---
+## 📝 Technical Details
+- **🛠️ Architecture:** Client-Server model with TCP socket communication
+- **🌟 GUI:** Built using **Java Swing** for an intuitive interface
+- **🛠️ Multi-threading:** Manages multiple client connections seamlessly
+- **💡 Networking:** Ensures reliable transmission of data over a TCP connection
 
-## Technical Details
-- **Client-Server Architecture**: Uses a central server to relay messages between clients
-- **Java Swing**: Graphical user interface built with Swing components
-- **Network Communication**: Uses TCP sockets for reliable communication
-- **Multi-threading**: Handles multiple clients simultaneously
-
-## Prerequisites
+## 🌐 Prerequisites
 - **Java 8 or higher**
-- **Stable network connectivity between clients and server**
+- **Stable network connection**
 
-## How to Run
-### Server
+---
+## ⚙️ How to Run
+
+### 💪 Server Setup
 1. Compile the server code:
    ```sh
    javac server/WhiteboardServer.java
@@ -40,32 +39,45 @@ This is a collaborative whiteboard application that allows multiple users to:
    java server.WhiteboardServer
    ```
 
-### Client
+### 👥 Client Setup
 1. Compile the client code:
    ```sh
    javac client/WhiteboardClient.java
    ```
-2. Run a client:
+2. Launch a client:
    ```sh
    java client.WhiteboardClient
    ```
-3. Enter your username when prompted
+3. Enter your username when prompted to join the session.
 
-## Usage Instructions
-- **Drawing**: Click and drag on the whiteboard to draw
-- **Color Selection**: Click on any color button to change the drawing color
-- **Eraser**: Click the "E" button to switch to eraser mode
-- **Chat**: Type messages in the chat box at the bottom and press Enter to send
-- **User List**: See all connected users in the right panel
+---
+## 🔧 Usage Guide
+### 🌟 Drawing Features
+- **Drawing**: Click and drag to draw on the canvas.
+- **Change Color**: Click on any color button to switch colors.
+- **Eraser Tool**: Click the "E" button to erase portions of your drawing.
+- **Clear Canvas**: Implemented in future updates.
 
-## Known Limitations
-- No persistent drawing storage (drawings are lost when the last client disconnects)
-- No authentication or user management
-- Basic error handling
+### 💬 Chat Features
+- Type a message in the chat box and press **Enter** to send.
+- Messages are visible to all connected users.
 
-## Future Enhancements
-- Add shape tools (rectangles, circles)
-- Implement drawing history/undo functionality
-- Add file saving/loading capability
-- Implement user authentication
+### 👤 User List
+- View the list of online users on the right panel.
+
+---
+## 🔧 Known Limitations
+❌ **No persistent storage** – Drawings disappear once the last client disconnects.  
+❌ **No authentication** – Any user can join without verification.  
+❌ **Basic error handling** – Limited handling of connection issues.  
+
+---
+## 🌐 Future Enhancements
+✨ **Shape tools** – Add support for rectangles, circles, and straight lines.  
+✨ **Undo functionality** – Implement drawing history with an undo/redo feature.  
+✨ **Save & Load** – Allow users to save and reload previous drawings.  
+✨ **Authentication** – Implement login/signup functionality.  
+
+---
+**📈 Stay tuned for more updates and improvements!**
 
