@@ -32,9 +32,9 @@ The **Collaborative Whiteboard Application** is an interactive platform that ena
 ---
 ## ⚙️ How to Run
 1. Database Setup (JDBC)
-📦 Add MySQL JDBC Connector
-Download from: MySQL Connector/J
-Extract the .zip or .tar.gz and locate mysql-connector-java-<version>.jar.
+- Add MySQL JDBC Connector
+- Download from: https://dev.mysql.com/downloads/connector/j/
+- Extract the .zip or .tar.gz and locate mysql-connector-java-<version>.jar.
 
 🗃️ Create Database and Table
 Open MySQL terminal or GUI and run:
