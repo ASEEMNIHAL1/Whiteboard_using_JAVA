@@ -53,11 +53,11 @@ CREATE TABLE client_names (
 );
 ```
 ### 💪 Server Setup
-2. Compile the server code:
+1. Compile the server code:
    ```sh
    javac server/WhiteboardServer.java
    ```
-3. Run the server:
+2. Run the server:
    ```sh
    java server.WhiteboardServer
    ```
