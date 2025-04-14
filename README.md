@@ -14,6 +14,7 @@ The **Collaborative Whiteboard Application** is an interactive platform that ena
 ✅ **Eraser Tool** – Easily remove unwanted parts of your drawing  
 ✅ **Live Chat** – Communicate with other users via integrated text chat  
 ✅ **User List** – View active participants in real-time  
+✅ **JDBC Integration** – Stores client names and login timestamps in a MySQL database
 
 ---
 ## 📝 Technical Details
@@ -21,20 +22,42 @@ The **Collaborative Whiteboard Application** is an interactive platform that ena
 - **🌟 GUI:** Built using **Java Swing** for an intuitive interface
 - **🛠️ Multi-threading:** Manages multiple client connections seamlessly
 - **💡 Networking:** Ensures reliable transmission of data over a TCP connection
+- **📝 Database: MySQL via JDBC for storing user login data
 
 ## 🌐 Prerequisites
 - **Java 8 or higher**
+- **MySQL Server installed and running**
 - **Stable network connection**
 
 ---
 ## ⚙️ How to Run
+1. Database Setup (JDBC)
+📦 Add MySQL JDBC Connector
+Download from: MySQL Connector/J
+Extract the .zip or .tar.gz and locate mysql-connector-java-<version>.jar.
 
+🗃️ Create Database and Table
+Open MySQL terminal or GUI and run:
+
+sql
+Copy code
+```sh
+CREATE DATABASE whiteboard;
+
+USE whiteboard;
+
+CREATE TABLE client_names (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(255),
+    log_time TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+```
 ### 💪 Server Setup
-1. Compile the server code:
+2. Compile the server code:
    ```sh
    javac server/WhiteboardServer.java
    ```
-2. Run the server:
+3. Run the server:
    ```sh
    java server.WhiteboardServer
    ```
