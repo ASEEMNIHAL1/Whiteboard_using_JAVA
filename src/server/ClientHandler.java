@@ -32,7 +32,7 @@ public class ClientHandler implements Runnable {
                 throw new IOException("Username not received.");
             }
 
-            // Minimal JDBC code integration: log the client's name to the database
+            // Logging Username in Database
             logClientName(username);
 
             WhiteboardServer.broadcast("CHAT " + username + " joined the chat.");
@@ -53,9 +53,8 @@ public class ClientHandler implements Runnable {
             }
         }
     }
-
+     // JDBC: Logging Client Name And Time
     private void logClientName(String clientName) {
-        // Replace these with your actual database credentials and URL
         String jdbcURL = "jdbc:mysql://localhost:3306/whiteboard";
         String dbUser = "root";
         String dbPassword = "aseem";
