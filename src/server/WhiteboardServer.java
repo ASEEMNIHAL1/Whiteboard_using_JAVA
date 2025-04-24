@@ -23,7 +23,7 @@ public class WhiteboardServer {
             e.printStackTrace();
         }
     }
-
+    // Broadcasts a message to all connected clients
     static synchronized void broadcast(String message) {
         for (ClientHandler client : clients) {
             try {
@@ -33,7 +33,7 @@ public class WhiteboardServer {
             }
         }
     }
-
+ // Sends the updated list of connected users to all clients
     static synchronized void broadcastUserList() {
         List<String> usernames = new ArrayList<>();
         for (ClientHandler client : clients) {
@@ -44,7 +44,7 @@ public class WhiteboardServer {
         String userListMessage = "USERLIST " + String.join(",", usernames); // Use comma as separator
         broadcast(userListMessage);
     }
-
+// Removes a client when they disconnect and updates the active user list
     static synchronized void removeClient(ClientHandler client) {
         if (clients.remove(client)) {
             broadcast("CHAT " + client.getUsername() + " left the chat.");
