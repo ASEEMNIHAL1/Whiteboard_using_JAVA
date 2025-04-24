@@ -92,7 +92,7 @@ public class WhiteboardClient {
                         clientListModel.clear();
                         for (String user : users) {
                             if (!user.isEmpty()) {
-                                clientListModel.addElement(user);
+                                clientListModel.addElement(user); // username added to clientlist
                             }
                         }
                     });
